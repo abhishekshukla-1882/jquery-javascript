@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+<head>
+
+</head>
+<title></title>
+<style>
+body{
+    background-position: center;
+}
+</style>
+<body onload='ChangeIt()'>
+    <div id="background-container">
+        <!--<img alt="" src="images/1.png">--->
+
+    </div>
+<script  type="text/javascript">
+    function getHelloThere() {
+        document.getElementById('background-container').ChangeIt();
+    }
+</script>
+<script type="text/javascript">
+        var totalCount = 5;
+        function ChangeIt() {
+            var num = Math.ceil(Math.random() * totalCount);
+            document.body.background = 'images/' + num + '.png';
+        }
+</script>
+</body>
+</html>
